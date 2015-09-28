@@ -55,7 +55,8 @@ a:hover {
   height: 100vh;
   align-items: center;
   justify-content: center;
-  border-bottom: 2px solid #fff;
+  /*border-bottom: 2px solid #fff;*/
+  overflow: hidden;
 }
 
 .nav{
@@ -78,7 +79,13 @@ a:hover {
   flex-grow: 1;
   align-self: stretch;
   justify-content: center;
-  background-color: rgba(255,0,0,0.3);
+  /*background-color: rgba(255,0,0,0.3);*/
+}
+
+.section_pic{
+  position: absolute;
+  top: 21%;
+  left: 32%;
 }
 
 .feature-description {
@@ -86,6 +93,53 @@ a:hover {
   flex-grow: 1;
   align-self:stretch;
   justify-content: center;
-  background-color: rgba(0,255,0,0.3);
+  /*background-color: rgba(0,255,0,0.3);*/
 }
 
+#android-robot{
+  position: absolute;
+  top: 83%;
+  left: 92%;
+  transform: rotate(-45deg);
+}
+
+#slider-control {
+  padding: 3px;
+}
+
+#slider-control a {
+  padding: 3px;
+}
+
+#slider-control .dot {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+#slider-control .active .dot {
+  background-color: #fff;
+}
+
+#slider-control{
+  position: fixed;
+  left: 98%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+#intro-section {
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(31,30,52,1));
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
