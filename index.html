@@ -11,6 +11,10 @@
     <!-- 在移动端禁用缩放。对响应式设计有用。 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/bundle/app.css">
+    <script type="text/javascript" src="node_modules/gsap/src/uncompressed/TweenMax.js"></script>
+    <script type="text/javascript" src="node_modules/gsap/src/uncompressed/plugins/ScrollToPlugin.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
     <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
     <!-- <link rel="stylesheet" href="css/app.css"> -->
 </head>
@@ -35,7 +39,7 @@
             </a>
         </div>
     </div>
-    <div class="section section_two">
+    <div id="native" class="section section_two">
         <div class="iphone-demo">
             <img src="img/iphone-frame.svg" />
             <img class="section_pic" src="img/tumblr-demo.jpg" />
@@ -47,7 +51,7 @@
             </p>
         </div>
     </div>
-    <div class="section section_three">
+    <div id="touch" class="section section_three">
         <div class="iphone-demo">
             <img src="img/iphone-frame.svg" />
             <img class="section_pic" src="img/swype-demo.jpg" />
@@ -59,24 +63,25 @@
             </p>
         </div>
     </div>
-    <div class="section section_three">
+    <div id="android" class="section section_three">
         <h1>Android Is Here</h1>
         <img id="android-robot" src="img/android-robot.svg" />
     </div>
     <div id="slider-control">
-        <a href="#native" class="active">
+        <a href="#intro-section" class="active">
+            <div class="dot"></div>
+        </a>
+        <a href="#native">
             <div class="dot"></div>
         </a>
         <a href="#touch">
             <div class="dot"></div>
         </a>
-        <a href="#async">
-            <div class="dot"></div>
-        </a>
-        <a href="#flex">
+        <a href="#android">
             <div class="dot"></div>
         </a>
     </div>
+    
 </body>
 
 </html>
